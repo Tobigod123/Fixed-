@@ -55,7 +55,7 @@ app = Client(
         api_id=APP_ID,
         api_hash=API_HASH,
         workers=2
-        ipv6=True
+        ipv6=TRUE
     )
 if os.path.exists(LOG_FILE_ZZGEVC):
     with open(LOG_FILE_ZZGEVC, "r+") as f_d:
