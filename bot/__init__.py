@@ -54,7 +54,7 @@ app = Client(
         bot_token=TG_BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
-        workers=2
+        workers=2,
         ipv6=TRUE
     )
 if os.path.exists(LOG_FILE_ZZGEVC):
