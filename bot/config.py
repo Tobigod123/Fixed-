@@ -12,7 +12,7 @@ class Config(object):
      # Get these values from my.telegram.org
     AUTH_USERS = set(
         int(x) for x in get_config(
-            "AUTH_USERS", "1482769753 1995886602"
+            "AUTH_USERS", "1482769753 1995886602 -1001816242004"
         ).split()
     )
 # array , simplest method was AUTH_USERS = [] ; AUTH_USERS.append(your telegram id) 🤣
