@@ -31,7 +31,7 @@ APP_ID = Config.APP_ID
 API_HASH = Config.API_HASH
 
 LOG_CHANNEL = Config.LOG_CHANNEL # make sure to us this 
-DOWNLOAD_LOCATION = "/app/downloads"
+DOWNLOAD_LOCATION = "downloads/"
 FREE_USER_MAX_FILE_SIZE = 2097152000
 MAX_MESSAGE_LENGTH = 4096
 FINISHED_PROGRESS_STR = "▣"
@@ -54,8 +54,7 @@ app = Client(
         bot_token=TG_BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
-        workers=2,
-        ipv6=True
+        workers=2
     )
 if os.path.exists(LOG_FILE_ZZGEVC):
     with open(LOG_FILE_ZZGEVC, "r+") as f_d:
