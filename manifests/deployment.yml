@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kmac-f8cd"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kmac-f8cd"
+  template:
+    metadata:
+      labels:
+        app: "kmac-f8cd"
+    spec:
+      containers:
+        - name: "kmac-f8cd"
+          image: "batencoder.azurecr.io/kmac"
+          ports:
+          - containerPort: 80
