@@ -22,7 +22,7 @@ from bot import (
 from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
-  take_screen_shot
+  take_screen_shot,
   get_width_height
 )
 
