@@ -30,9 +30,11 @@ from bot.helper_funcs.display_progress import (
     TimeFormatter,
     humanbytes
 )
-
-
-
+from bot.helper_funcs.ffmpeg import (
+  media_info,
+  take_screen_shot,
+  get_width_height
+)
 
 async def exec_message_f(client, message):
   if message.from_user.id in AUTH_USERS:
