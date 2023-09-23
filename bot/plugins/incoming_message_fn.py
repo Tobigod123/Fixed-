@@ -17,7 +17,6 @@ from bot import (
   SESSION_NAME,
   data,
   app, 
-  LOGZ  
 )
 
 from bot.helper_funcs.ffmpeg import (
