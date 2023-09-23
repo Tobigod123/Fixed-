@@ -227,7 +227,6 @@ async def incoming_compress_message_f(update):
         document=o,
         caption=joined_string,
         force_document=True,
-        duration=duration,
         width=width,
         height=height,
         file_name=joined_string,
