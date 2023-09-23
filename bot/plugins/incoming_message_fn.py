@@ -222,7 +222,7 @@ async def incoming_compress_message_f(update):
       )
       u_start = time.time()
       caption = Localisation.COMPRESS_SUCCESS.replace('{}', downloaded_time, 1).replace('{}', compressed_time, 1)
-      upload = await bot.send_video(
+      upload = await bot.send_document(
         chat_id=update.chat.id,
         document=o,
         caption=joined_string,
