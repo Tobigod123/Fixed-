@@ -226,6 +226,7 @@ async def incoming_compress_message_f(update):
         chat_id=update.chat.id,
         document=o,
         caption=joined_string,
+        force_document=True,
         supports_streaming=True,
         duration=duration,
         width=width,
