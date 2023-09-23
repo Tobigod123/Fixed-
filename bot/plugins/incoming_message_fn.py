@@ -23,6 +23,7 @@ from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
   take_screen_shot
+  get_width_height
 )
 
 from bot.helper_funcs.display_progress import (
@@ -180,6 +181,7 @@ async def incoming_compress_message_f(update):
         thumbnailed = "thumb.jpg"
     else:
         thumbnailed = thumb_image_path
+    width, height = get_width_height(saved_file_path)
     chat_id = LOG_CHANNEL
     utc_now = datetime.datetime.utcnow()
     ist_now = utc_now + datetime.timedelta(minutes=30, hours=5)
