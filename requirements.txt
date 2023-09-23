@@ -2,6 +2,7 @@ aiohttp
 Pillow
 psutil
 hachoir
+anitopy
 tgcrypto
 pyrogram==1.4
 motor
