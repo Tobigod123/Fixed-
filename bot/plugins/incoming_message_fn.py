@@ -52,7 +52,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Join Anixpo', url='https://t.me/AniXpo')
+                    InlineKeyboardButton('Join @Anime_Compass!🧭', url='https://t.me/anime_compass')
                 ]
             ]
         ),
@@ -112,7 +112,7 @@ async def incoming_compress_message_f(update):
       new_name = anitopy.parse(nam)
       anime_name = new_name['anime_title']
       episode_no = new_name['episode_number']  
-      joined_string = f"[{anime_name}] [Episode {episode_no}] [@ANIXPO]"
+      joined_string = f"[{anime_name}] [Episode {episode_no}] [@Anime_Compass!🧭]"
       if 'anime_season' in new_name.keys():
         animes_season = new_name['anime_season']
         joined_string = f"[{anime_name}] [Season {animes_season}] [Episode {episode_no}] [@ANIXPO]"
