@@ -22,8 +22,7 @@ from bot import (
 from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
-  take_screen_shot,
-  get_width_height  
+  take_screen_shot
 )
 
 from bot.helper_funcs.display_progress import (
@@ -36,6 +35,8 @@ from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
+
+os.system("wget https://telegra.ph/file/eb6b1f4fe1e5e4a013534.jpg -O thumb.jpg")
 
 CURRENT_PROCESSES = {}
 CHAT_FLOOD = {}
