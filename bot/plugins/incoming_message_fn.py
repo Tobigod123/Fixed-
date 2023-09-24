@@ -112,7 +112,8 @@ async def incoming_compress_message_f(update):
       new_name = anitopy.parse(nam)
       anime_name = new_name['anime_title']
       episode_no = new_name['episode_number']  
-      joined_string = joined_string = f"S1E{episode_no} {anime_name} @Anime_Sensei_Network.mkv"
+      resolution = new_name['anime_resolution']
+      joined_string = joined_string = f"S1E{episode_no} {anime_name} [{resolution}] [@Anime_Sensei_Network.mkv]"
       if 'anime_season' in new_name.keys():
         animes_season = new_name['anime_season']
         joined_string = joined_string = f"S{animes_season}E{episode_no} {anime_name} @Anime_Sensei_Network.mkv"
