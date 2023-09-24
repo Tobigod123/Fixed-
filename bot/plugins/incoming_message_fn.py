@@ -116,10 +116,7 @@ async def incoming_compress_message_f(update):
       if 'anime_season' in new_name.keys():
         animes_season = new_name['anime_season']
         joined_string = joined_string = f"S{animes_season}E{episode_no} - {anime_name} \n<b>Resolution</b> : [{resolution[0]}][Sub][@Anime_Sensei_Network].mkv"
-      if 'resolution' in new_name.keys():
-        resolution = new_name['resolution']
-        joined_string = joined_string = f"S{animes_season}E{episode_no} - {anime_name} [{resolution}][dub][@Anime_Sensei_Network].mkv"
- 
+
 
       LOGGER.info(saved_file_path)  
       LOGGER.info(video)
