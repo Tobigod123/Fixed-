@@ -107,8 +107,8 @@ async def incoming_compress_message_f(update):
       xnx = eni.split(".")[-1]
       opm = eni.replace(f".{xnx}", " .mkv")
       nam = opm.replace("_", " ")
-      nam = opm.replace("1080p", "[720p]")
-      nam = opm.replace("720p", "[480p]")
+      nam = eni.replace("1080p", "[720p]")
+      nam = eni.replace("720p", "[480p]")
       nam = opm.replace(".", " ")
       anitopy_options = {'allowed_delimiters': ' '}
       new_name = anitopy.parse(nam)
