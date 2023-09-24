@@ -52,7 +52,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Join @Anime_Compass!🧭', url='https://t.me/anime_compass')
+                    InlineKeyboardButton('Source Code', url='https://t.me/anime')
                 ]
             ]
         ),
