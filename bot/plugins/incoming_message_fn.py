@@ -61,7 +61,7 @@ async def incoming_start_message_f(bot, update):
     
 async def incoming_compress_message_f(update):
   """/compress command"""
-                                   
+                                
   isAuto = True
   d_start = time.time()
   c_start = time.time()
@@ -102,7 +102,6 @@ async def incoming_compress_message_f(update):
           d_start
         )
       )
-      async def settings(app, message):
       saved_file_path = video
       eni = saved_file_path.split("/")[-1]
       xnx = eni.split(".")[-1]
