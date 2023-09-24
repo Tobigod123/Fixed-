@@ -115,7 +115,7 @@ async def incoming_compress_message_f(update):
       joined_string = f"[{anime_name}] [Episode {episode_no}] [@Anime_Compass!🧭.mkv]"
       if 'anime_season' in new_name.keys():
         animes_season = new_name['anime_season']
-        joined_string = f"[{anime_name}] [Season {animes_season}] [Episode {episode_no}] [@ANIXPO]"
+        joined_string = f"[{anime_name}] [Season {animes_season}] [Episode {episode_no}] [@Anime_Compass!🧭.mkv]"
       LOGGER.info(saved_file_path)  
       LOGGER.info(video)
       if( video is None ):
