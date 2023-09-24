@@ -102,6 +102,7 @@ async def incoming_compress_message_f(update):
           d_start
         )
       )
+      async def settings(app, message):
       saved_file_path = video
       eni = saved_file_path.split("/")[-1]
       xnx = eni.split(".")[-1]
@@ -112,10 +113,10 @@ async def incoming_compress_message_f(update):
       new_name = anitopy.parse(nam)
       anime_name = new_name['anime_title']
       episode_no = new_name['episode_number']  
-      joined_string = joined_string = f"S1E{episode_no} - {anime_name} [480p][Sub][@Anime_Sensei_Network].mkv"
+      joined_string = joined_string = f"S1E{episode_no} - {anime_name} \n<b>Resolution</b> : [{resolution[0]}][Sub][@Anime_Sensei_Network].mkv"
       if 'anime_season' in new_name.keys():
         animes_season = new_name['anime_season']
-        joined_string = joined_string = f"S{animes_season}E{episode_no} - {anime_name} [480p][Sub][@Anime_Sensei_Network].mkv"
+        joined_string = joined_string = f"S{animes_season}E{episode_no} - {anime_name} \n<b>Resolution</b> : [{resolution[0]}][Sub][@Anime_Sensei_Network].mkv"
       if 'resolution' in new_name.keys():
         resolution = new_name['resolution']
         joined_string = joined_string = f"S{animes_season}E{episode_no} - {anime_name} [{resolution}][dub][@Anime_Sensei_Network].mkv"
