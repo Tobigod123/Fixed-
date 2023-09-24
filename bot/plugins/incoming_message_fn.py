@@ -37,7 +37,7 @@ from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
-os.system("wget https://telegra.ph/file/eb6b1f4fe1e5e4a013534.jpg -O thumb.jpg")
+os.system("wget https://telegra.ph/file/1c74222f7f12c42573455.jpg -O thumb.jpg")
 
 CURRENT_PROCESSES = {}
 CHAT_FLOOD = {}
