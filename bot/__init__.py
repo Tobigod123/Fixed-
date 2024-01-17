@@ -51,7 +51,7 @@ codec = []
 pid_list = []
 app = Client(
         SESSION_NAME,
-        TG_BOT_TOKEN=TG_BOT_TOKEN,
+        bot_token=TG_BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
         workers=2
