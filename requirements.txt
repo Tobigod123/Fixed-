@@ -5,15 +5,10 @@ hachoir
 anitopy
 asyncio
 tgcrypto
-pyrogram
 python-dotenv
-pyrogram==1.4
-pyrogram==2.0.106
+pyrogram==
 pyromod
 motor
 https://github.com/Tinche/aiofiles/archive/master.zip
 dnspython
-
-
-
 
