@@ -2,10 +2,8 @@ aiohttp
 Pillow
 psutil
 hachoir
-anitopy
 tgcrypto
-pyromod
+pyrogram==1.4
 motor
 https://github.com/Tinche/aiofiles/archive/master.zip
-
-
+dnspython
