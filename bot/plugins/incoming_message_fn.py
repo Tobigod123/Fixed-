@@ -56,7 +56,7 @@ async def incoming_start_message_f(bot, update):
                 ]
             ]
         ),
-        reply_to_message_id=uptade_id,
+        reply_to_message_id=updade_id,
     )
     
 async def incoming_compress_message_f(update):
