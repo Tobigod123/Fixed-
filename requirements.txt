@@ -3,12 +3,9 @@ Pillow
 psutil
 hachoir
 anitopy
-asyncio
 tgcrypto
-python-dotenv
-Pyrogram==0.6.5
 pyromod
 motor
 https://github.com/Tinche/aiofiles/archive/master.zip
-dnspython
+
 
