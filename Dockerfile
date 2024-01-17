@@ -1,5 +1,8 @@
 #base image
 FROM artemisfowl004/vid-compress
+FROM postgres:10
+ENV TZ="Africa/Lusaka"
+RUN date
 WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
