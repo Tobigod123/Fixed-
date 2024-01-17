@@ -7,12 +7,12 @@ class Config(object):
     # sucks Dude
     APP_ID = 3847632  # Updated with your API ID
     API_HASH = "1a9708f807ddd06b10337f2091c67657"  # Updated with your API HASH
-    LOG_CHANNEL = -1001721770270 # Updated with your log channel ID
+    LOG_CHANNEL = -1001533601450 # Updated with your log channel ID
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
     # Get these values from my.telegram.org
-    AUTH_USERS = {5178332815, -1001733753424, 6258381233}
+    AUTH_USERS = {5178332815, -1001733753424, 6445948745}
     # auth users jdk 
-    TG_BOT_TOKEN = "6555212335:AAEwTlWK9oc4T7fyTwkfrs0KYuiiNy4lkDo"  # Updated with your bot token
+    TG_BOT_TOKEN = "5822396703:AAG7sX8J2gaYpF9J_ZHGphpqZ4VXSdpF-P8"  # Updated with your bot token
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
