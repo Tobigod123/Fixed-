@@ -7,7 +7,7 @@ class Config(object):
     # sucks Dude
     APP_ID = 4018758  # Updated with your API ID
     API_HASH = "622bba3cf046315531f71f9d97fa6c2a"  # Updated with your API HASH
-    LOG_CHANNEL = -1001533601450 # Updated with your log channel ID
+    LOG_CHANNEL = "ygsrhggd" # Updated with your log channel ID
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
     # Get these values from my.telegram.org
     AUTH_USERS = {5178332815, -1001733753424, 6445948745}
@@ -16,7 +16,7 @@ class Config(object):
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
-    BOT_USERNAME = "5342561932"  # Updated with your bot username
+    BOT_USERNAME = "Feelpainroobot"  # Updated with your bot username
     MAX_FILE_SIZE = 2097152000
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 2097152000
