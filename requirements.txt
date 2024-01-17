@@ -4,7 +4,7 @@ psutil
 hachoir
 anitopy
 tgcrypto
-pyrogram==1.4
+pyrogram==2.0.106
 motor
 https://github.com/Tinche/aiofiles/archive/master.zip
 dnspython
