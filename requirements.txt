@@ -6,7 +6,7 @@ anitopy
 asyncio
 tgcrypto
 python-dotenv
-pyrogram==
+Pyrogram==0.6.5
 pyromod
 motor
 https://github.com/Tinche/aiofiles/archive/master.zip
