@@ -79,7 +79,7 @@ async def incoming_compress_message_f(update):
   bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
   bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
   now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-  download_start = await bot.send_message(chat_id, f"**Bot Become Busy Now !!** \n\nDownload Started at `{now}`", parse_mode="markdown")
+  download_start = await bot.send_message(chat_id, f"**Bot Become Busy Now !!** \n\nDownload Started at `{now}`")
   try:
       d_start = time.time()
       status = DOWNLOAD_LOCATION + "/status.json"
@@ -132,7 +132,7 @@ async def incoming_compress_message_f(update):
           bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
           bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
           now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-          await bot.send_message(chat_id, f"**Download Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+          await bot.send_message(chat_id, f"**Download Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`")
           await download_start.delete()
         except:
           pass
@@ -169,7 +169,7 @@ async def incoming_compress_message_f(update):
         bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
         bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
         now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-        await bot.send_message(chat_id, f"**Download Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+        await bot.send_message(chat_id, f"**Download Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`")
         await download_start.delete()
       except:
           pass          
@@ -192,7 +192,7 @@ async def incoming_compress_message_f(update):
     bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
     now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
     await download_start.delete()
-    compress_start = await bot.send_message(chat_id, f"**Compressing Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
+    compress_start = await bot.send_message(chat_id, f"**Compressing Video ...** \n\nProcess Started at `{now}`")
     await sent_message.edit_text(                    
       text=Localisation.COMPRESS_START                    
     )
@@ -218,7 +218,7 @@ async def incoming_compress_message_f(update):
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
       now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await compress_start.delete()
-      upload_start = await bot.send_message(chat_id, f"**Uploading Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
+      upload_start = await bot.send_message(chat_id, f"**Uploading Video ...** \n\nProcess Started at `{now}`")
       await sent_message.edit_text(                    
         text=Localisation.UPLOAD_START,                    
       )
@@ -255,7 +255,7 @@ async def incoming_compress_message_f(update):
           bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
           bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
           now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-          await bot.send_message(chat_id, f"**Upload Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+          await bot.send_message(chat_id, f"**Upload Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`")
           await upload_start.delete()
         except:
           pass
@@ -272,7 +272,7 @@ async def incoming_compress_message_f(update):
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
       now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await upload_start.delete()
-      await bot.send_message(chat_id, f"**Upload Done, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+      await bot.send_message(chat_id, f"**Upload Done, Bot is Free Now !!** \n\nProcess Done at `{now}`")
       LOGGER.info(upload.caption);
       try:
         await upload.edit_caption(
@@ -288,7 +288,7 @@ async def incoming_compress_message_f(update):
         )
         chat_id = LOG_CHANNEL
         now = datetime.datetime.now()
-        await bot.send_message(chat_id, f"**Compression Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+        await bot.send_message(chat_id, f"**Compression Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`")
         await download_start.delete()
       except:
         pass
@@ -305,7 +305,7 @@ async def incoming_compress_message_f(update):
       bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
       now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-      await bot.send_message(chat_id, f"**Download Error, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+      await bot.send_message(chat_id, f"**Download Error, Bot is Free Now !!** \n\nProcess Done at `{now}`")
       await download_start.delete()
     except:
       pass
