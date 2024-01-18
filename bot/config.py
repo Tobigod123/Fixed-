@@ -10,7 +10,7 @@ class Config(object):
     LOG_CHANNEL = "ygsrhggd" # Updated with your log channel ID
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
     # Get these values from my.telegram.org
-    AUTH_USERS = {5178332815, -1001733753424, 6445948745}
+    AUTH_USERS = {5385471287, -1001533601450, 6445948745}
     # auth users jdk 
     TG_BOT_TOKEN = "5822396703:AAG7sX8J2gaYpF9J_ZHGphpqZ4VXSdpF-P8"  # Updated with your bot token
     # the download location, where the HTTP Server runs
