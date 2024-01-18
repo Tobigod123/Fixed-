@@ -70,7 +70,7 @@ async def incoming_compress_message_f(update):
   sent_message = await bot.send_message(
   chat_id=update.chat.id,
   text=Localisation.DOWNLOAD_START,
-  reply_to_message_id=update.message_id
+  reply_to_message_id=update.id
               )
   chat_id = LOG_CHANNEL
   utc_now = datetime.datetime.utcnow()
