@@ -68,7 +68,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     with open(status, 'r+') as f:
       statusMsg = json.load(f)
       statusMsg['pid'] = process.pid
-      statusMsg['message'] = message.message_id
+      statusMsg['message'] = message.id
       f.seek(0)
       json.dump(statusMsg,f,indent=2)
     # os.kill(process.pid, 9)
