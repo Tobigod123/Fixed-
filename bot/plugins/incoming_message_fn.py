@@ -86,7 +86,7 @@ async def incoming_compress_message_f(update):
       with open(status, 'w') as f:
         statusMsg = {
           'running': True,
-          'message': sent_message.update.id
+          'message': sent_message.id
         }
 
         json.dump(statusMsg, f, indent=2)
